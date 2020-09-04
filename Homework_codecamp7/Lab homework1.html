@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab homework</title>
+    <style>
+
+        table,th,td
+        {
+
+            border: 1px solid black;
+
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+<body>
+    <div>Homework codecamp7</div>
+    <div>นายอนวัช ชาคริตานนท์</div>
+    <br>
+    <div>1.ให้หาว่า attribute ของ tag ต่อไปนี้มี อะไรบ้างและใช้งานอย่างไร </div>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Name_tag</th>
+                <th>    attribute</th>
+                <th>    Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>h</td>
+                <td><ul>h1,h2,h3,h4,h5,h6</ul></td>
+                <td><ul>use h tags are used to define HTML headings.</ul></td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td><ul>p</ul></td>
+                <td><ul>The p tag defines a paragraph.</ul></td>
+            </tr>
+            <tr>
+                <td>div</td>
+                <td><ul>div</ul></td>
+                <td><ul>The div tag defines a division or a section in an HTML document.tag is used as a container for HTML elements</ul></td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>
+                    <ul>alt</ul>
+                    <ul>crossorigin</ul>
+                    <ul>height</ul>
+                    <ul>ismap</ul>
+                    <ul>longdesc</ul>
+                    <ul>referrerpolicy</ul>
+                    <ul>size</ul>
+                    <ul>src</ul>
+                    <ul>srcset</ul>
+                    <ul>usemap</ul>
+                    <ul>width</ul>
+                </td>
+                <td>
+                    <ul>Specifies an alternate text for an image</ul>
+                    <ul>Allow images from third-party sites that allow cross-origin access to be used with canvas</ul>
+                    <ul>Specifies the height of an image</ul>
+                    <ul>Specifies an image as a server-side image map</ul>
+                    <ul>Specifies a URL to a detailed description of an image</ul>
+                    <ul>Specifies which referrer to use when fetching the image</ul>
+                    <ul>Specifies image sizes for different page layouts</ul>
+                    <ul>Specifies the path to the image</ul>
+                    <ul>Specifies a list of image files to use in different situations</ul>
+                    <ul>Specifies an image as a client-side image map</ul>
+                    <ul>Specifies the width of an image</ul>
+                </td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>
+                    <ul>download</ul>
+                    <ul>href</ul>
+                    <ul>hreflang</ul>
+                    <ul>media</ul>
+                    <ul>ping</ul>
+                    <ul>referrerpolicy</ul>
+                    <ul>rel</ul>
+                    <ul>target</ul>
+                    <ul>type</ul></td>
+                <td>
+                    <ul>Specifies that the target will be downloaded when a user clicks on the hyperlink</ul>
+                    <ul>Specifies the URL of the page the link goes to</ul>
+                    <ul>Specifies the language of the linked document</ul>
+                    <ul>Specifies what media/device the linked document is optimized for</ul>
+                    <ul>Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser</ul>
+                    <ul>Specifies which referrer to send</ul>
+                    <ul>Specifies the relationship between the current document and the linked document</ul>
+                    <ul>Specifies where to open the linked document</ul>
+                    <ul>Specifies the media type of the linked document</ul>
+                </td>
+            </tr>
+            <tr>
+                <td>ul</td>
+                <td><ul>ul</ul></td>
+                <td><ul>tag also supports the Global Attributes in HTML.</ul></td>
+            </tr>
+            <tr>
+                <td>ol</td>
+                <td>
+                    <ul>reversed</ul>
+                    <ul>start</ul>
+                    <ul>type</ul>
+                </td>
+                <td>
+                    <ul>Specifies that the list order should be reversed (9,8,7...)</ul>
+                    <ul>Specifies the start value of an ordered list</ul>
+                    <ul>Specifies the kind of marker to use in the list</ul>
+                </td>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td><ul>table</ul></td>
+                <td><ul>tag defines an HTML table.</ul></td>
+            </tr>
+            <tr>
+                <td>form</td>
+                <td>
+                    <ul>accept-charset</ul>
+                    <ul>action</ul>
+                    <ul>autocomplete</ul>
+                    <ul>enctype</ul>
+                    <ul>method</ul>
+                    <ul>name</ul>
+                    <ul>novalidate</ul>
+                    <ul>rel</ul>
+                    <ul>target</ul>
+                </td>
+                <td>
+                    <ul>Specifies the character encodings that are to be used for the form submission</ul>
+                    <ul>Specifies where to send the form-data when a form is submitted</ul>
+                    <ul>Specifies whether a form should have autocomplete on or off</ul>
+                    <ul>Specifies how the form-data should be encoded when submitting it to the server (only for method="post")</ul>
+                    <ul>Specifies the HTTP method to use when sending form-data</ul>
+                    <ul>Specifies the name of a form</ul>
+                    <ul>Specifies that the form should not be validated when submitted</ul>
+                    <ul>Specifies the relationship between a linked resource and the current document</ul>
+                    <ul>Specifies where to display the response that is received after submitting the form</ul>
+                </td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td>
+                    <ul>autofocus</ul>
+                    <ul>disabled</ul>
+                    <ul>form</ul>
+                    <ul>formaction</ul>
+                    <ul>formenctype</ul>
+                    <ul>formmethod</ul>
+                    <ul>formnovalidate</ul>
+                    <ul>formtarget</ul>
+                    <ul>name</ul>
+                    <ul>type</ul>
+                    <ul>value</ul>
+                </td>
+                <td>
+                    <ul>Specifies that a button should automatically get focus when the page loads</ul>
+                    <ul>Specifies that a button should be disabled</ul>
+                    <ul>Specifies which form the button belongs to</ul>
+                    <ul>Specifies where to send the form-data when a form is submitted. Only for type="submit"</ul>
+                    <ul>Specifies how form-data should be encoded before sending it to a server. Only for type="submit"</ul>
+                    <ul>Specifies how to send the form-data (which HTTP method to use). Only for type="submit"</ul>
+                    <ul>Specifies that the form-data should not be validated on submission. Only for type="submit"</ul>
+                    <ul>Specifies where to display the response after submitting the form. Only for type="submit"</ul>
+                    <ul>Specifies a name for the button</ul>
+                    <ul>Specifies the type of button</ul>
+                    <ul>Specifies an initial value for the button</ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div>2. ให้หาความเหมือนและความแตกต่างระหว่าง 2 tag ที่กำหนดให้</div>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Name_Tag</th>
+                <th>Similarity</th>
+                <th>Difference</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>hr & br</td>
+               <td><ul>give line break.</ul></td>
+               <td><ul>hr give a horizontal link break but br gives an empty line break</ul></td>
+            </tr>
+            <tr>
+                <td>ul & ol</td>
+                <td><ul>define list.</ul></td>
+                <td><ul>ul defines an unordered (bulleted) list but.ol defines an ordered list.</ul></td>
+            </tr>
+            <tr>
+                <td>select & checkbox & radio button</td>
+                <td><ul>user to choose something.</ul></td>
+                <td>
+                    <ul>select used to create a drop-down list.</ul>
+                    <ul>checkbox is shown as a square box that is ticked when activaterd </ul>
+                    <ul>radio button in a group can be selected at the same time.</ul>
+                </td>
+            </tr>
+            <tr>
+                <td>div & span</td>
+                <td><ul>define section or division in HTML.</ul></td>
+                <td><ul>div defines a division or a section in an HTML document. but span is an inline container used to mark up a part of a text, or a part of a document.</ul></td>
+            </tr>
+            <tr>
+                <td>script & style </td>
+                <td><ul>use external documents.</ul></td>
+                <td><ul>style information (CSS) for a document but script client-side script (JavaScript).</ul></td>
+            </tr>
+        </tbody>
+    </table>
+        <hr>
+        <div>3. ให้หาว่า input type มีอะไรบ้างแต่ละ type แตกต่างกันอย่างไร </div>
+    <br>
+    <table>
+            <thead>
+                <tr>
+                    <th>Name_type</th>
+                    <th>Definition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>button</td>
+                    <td><ul>Defines a clickable button (mostly used with a JavaScript to activate a script)</ul></td>
+                </tr>
+                <tr>
+                    <td>checkbox</td>
+                    <td><ul>Defines a checkbox</ul></td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td><ul>Defines a color picker</ul></td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td><ul>Defines a date control (year, month, day (no time))</ul></td>
+                </tr>
+                <tr>
+                    <td>datetime-local</td>
+                    <td><ul>Defines a date and time control (year, month, day, time (no timezone)</ul></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td><ul>Defines a field for an e-mail address</ul></td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td><ul>Defines a file-select field and a "Browse" button (for file uploads)</ul></td>
+                </tr>
+                <tr>
+                    <td>hidden</td>
+                    <td><ul>Defines a hidden input field</ul></td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td><ul>Defines an image as the submit button</ul></td>
+                </tr>
+                <tr>
+                    <td>month</td>
+                    <td><ul>Defines a month and year control (no timezone)</ul></td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td><ul>Defines a field for entering a number</ul></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><ul>Defines a password field</ul></td>
+                </tr>
+                <tr>
+                    <td>radio</td>
+                    <td><ul>Defines a radio button</ul></td>
+                </tr>
+                <tr>
+                    <td>range</td>
+                    <td><ul>Defines a range control (like a slider control) </ul></td>
+                </tr>
+                <tr>
+                    <td>reset</td>
+                    <td><ul>Defines a reset button</ul></td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td><ul>Defines a text field for entering a search string</ul></td>
+                </tr>
+                <tr>
+                    <td>submit</td>
+                    <td><ul>Defines a submit button</ul></td>
+                </tr>
+                <tr>
+                    <td>tel</td>
+                    <td><ul>Defines a field for entering a telephone number</ul></td>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td><ul>Default. Defines a single-line text field</ul></td>
+                </tr>
+                <tr>
+                    <td>time</td>
+                    <td><ul>Defines a control for entering a time (no timezone)</ul></td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td><ul>Defines a field for entering a URL</ul></td>
+                </tr>
+                <tr>
+                    <td>week</td>
+                    <td><ul>Defines a week and year control (no timezone)</ul></td>
+                </tr>
+            </tbody>
+    </table>
+<hr>
+<div>4. ให้ทดลอง ครอบตัวหนังสือด้วยแท๊ก และอธิบายว่าแต่ละ tag ปรับตัวหนังสืออย่างไร</div>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Name_tag</th>
+            <th>Exsample</th>
+            <th>Definition</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>strong , /strong</td>
+            <td><ul><strong>Exsample</strong></ul></td>
+            <td><ul>text as bold.</ul></td>
+        </tr>
+        <tr>
+            <td>label , /label</td>
+            <td><ul><label>Exsample</label></ul></td>
+            <td><ul>label for several elements.</ul></td>
+        </tr>
+        <tr>
+            <td>del , /del</td>
+            <td><ul><del>Exsample</del></ul></td>
+            <td><ul>text that has been deleted from a document.</ul></td>
+        </tr>
+        <tr>
+            <td>b , /b</td>
+            <td><ul><b>Exsample</b></ul></td>
+            <td><ul>the text as bold.</ul></td>
+        </tr>
+        <tr>
+            <td>em , /em</td>
+            <td><ul><em>Exsample</em></ul></td>
+            <td><ul>the text emphasized.</ul></td>
+        </tr>
+        <tr>
+            <td>mark , /mark</td>
+            <td><ul><mark>Exsample</mark></ul></td>
+            <td><ul>highlights</ul></td>
+        </tr>
+        <tr>
+            <td>i , /i</td>
+            <td><ul><i>Exsample</i></ul></td>
+            <td><ul>text emphasized.</ul></td>
+        </tr>
+        <tr>
+            <td>sub , /sub</td>
+            <td><ul><sub>Exsample</sub></ul></td>
+            <td><ul>subscript text.</ul></td>
+        </tr>
+        <tr>
+            <td>sup , /sup</td>
+            <td><ul><sup>Exsample</sup></ul></td>
+            <td><ul>superscript text.</ul></td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+</body>
+</html>
