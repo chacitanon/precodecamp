@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 1 - Answer</title>
+  <link rel="stylesheet" href="exercise-1.css">
+</head>
+<body>
+  <div class="all">
+  <form class="student-registration-form">
+    <!-- เขียนโค้ดในโจทย์ตรงนี้ -->
+    <h1>แบบฟอร์มลงทะเบียนนักเรีsgยน</h1>
+    <h2>CODECAMP #7</h2>
+  </form>
+<br>
+  <div class="name">
+    <label>ชื่อ</label>
+    <input type="text">
+    <label>นามสกุล</label>
+    <input type="text">
+  </div>
+<br>
+  <div class="age">
+    <label>อายุ</label>
+    <input type="number">
+  </div>
+<br>
+  <div class="day">
+    <label>วัน เดือน ปีเกิด</label>
+    <input type="datetime-local">
+  </div>
+<br>
+  <div class="color">
+    <label>สีที่ชอบ</label>
+    <input type="color">
+  </div>
+<br>
+  <div class="gender">
+    <p>เพศ</p>
+    <input type="radio" id="male" name="gender">
+    <label for="male">ชาย</label >
+    <input type="radio" id="female" name="gender">
+    <label for="female">หญิง</label>
+    <input type="radio" id="alternative" name="gender">
+    <label for="alternative">ทางเลือก</label>
+  </div>
+<br>
+  <div class="pic">
+    <label for="avatar-upload">รูปประจำตัว</label>
+    <input type="file" id="avatar-upload">
+  </div>
+<br>
+  <div class="text">
+    <label for="motto">คติประจำใจ</label>
+    <textarea id="motto" rows="10"></textarea>
+  </div>
+  <div class="button" >
+    <button>Submit</button>
+  </div>
+  </div>
+  <style>
+    .student-registration-form {
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      background-color: darkcyan;
+      color: darkgrey;
+      border-style:  solid ;
+      border-color:skyblue;
+      }
+    .name {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .age {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .day {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .color {
+      display: flex;
+      justify-content: center
+    }
+    .gender {
+      display: flex;
+      justify-content: flex-start
+    }
+    .pic {
+      display: flex;
+      justify-content: flex-end
+    }
+    .text {
+      display: flex;
+      justify-content: center
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+    .all {
+      width: 100%;
+      background: turquoise;
+    }
+  </style>
+</body>
+</html>
