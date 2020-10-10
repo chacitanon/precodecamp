@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        ////1.
+        // function draw(n) {
+        //     number = "";
+        //     for (let i = 1; i <= n; i++) {
+        //         number = number+"*";
+        //     }
+        //     return number;
+        // }
+        // console.log(draw())
+
+        ////2.
+        // function draw(n) {
+        //     number = "";
+        //     for (let i = 1; i <= n; i++) {
+        //         for (let j = 1; j <= n; j++) {
+        //             number = number+"*";
+        //         }
+        //         number = number+"\n";
+        //     }
+        //     return number;
+        // }
+
+        ////3.
+        // function draw(n) {
+        //     number = "";
+        //     for (let i = 1; i <= n; i++) {
+        //         for (let j = 1; j <= n; j++) {
+        //             number = number+j;
+        //         }
+        //         number = number+"\n";
+        //     }
+        //     return number;
+        // }
+
+////4.
+// function draw(n) {
+//     number="";
+//     for (let i = 1; i <= n; i++){
+//         for(let j = 1; j <= n; j++){
+//             number = number+i;
+//         }
+//         number = number+"\n";
+//     }
+//     return number;
+// }
+
+////5.
+// function draw(n) {
+//     number= "";
+//     for (let i = n; i > 0; i--){
+//         for(let j = 1; j <= n; j++){
+//             number = number+i;
+//         }
+//         number = number+"\n";
+//     }
+//     return number;
+// }
+
+////6.
+// function draw(n) {
+//     number="";
+//     for (let i = 1; i <= n; i++){
+//         for (let j = 1; j <= n; j++){
+//             number += j+(i-1)*n;
+//         }
+//         number += "\n";
+//     }
+//     return number;
+// }
+
+////7.
+// function draw(n) {
+//     number="";
+//     for (let i = 1; i <= n; i++) {
+//         for (let j = 1; j <= n; j++){
+//             number += n**2-n*(i-1)-j+1;
+//         }
+//         number += "\n";
+//     }
+//     return number;
+// }
+
+////8.
+// function draw(n) {
+//     number="";
+//     for ( i = 0; i < n; i++){
+//         number += 2*i+"\n";
+//     }
+//     return number;
+// }
+
+////9.
+// function draw(n) {
+//     number="";
+//     for ( i = 1; i <= n; i++){
+//         number += 2*i+"\n";
+//     }
+//     return number;
+// }
+
+////10.
+// function draw(n) {
+//     number="";
+//     for (let i = 1; i <= n; i++){
+//         for (let j = 1; j <= n; j++){
+//             number += i*j;
+//         }
+//         number += "\n";
+//     }
+//     return number;
+// }
+
+////11.
+// function draw(n) {
+//     number="";
+//     for (let i = 1; i <= n; i++) {
+//        for (let j = 1; j <= n; j++) {
+//            if (j !== i) {
+//             number += "*";
+//            } else {
+//             number += "-";
+//            }
+//        }
+//        number += "\n";
+//    }
+//    return number;
+// }
+
+////12.
+// function draw(n) {
+//     number="";
+//     for (let i = n; i > 0; i-- ){
+//         for (let j = 1; j <= n; j++){
+//             if (i !== j){
+//                 number += "*";
+//             } else {
+//                 number += "-";
+//             }
+//         }
+//         number += "\n";
+//     }
+//     return number;
+// }
+
+////13.
+// function draw(n) {
+//     number="";
+//     for (let i = 1; i <= n; i++) {
+//         for (let j = 1; j <= n; j++) {
+//             if (j <= i) {
+//                 number += "*";
+//             } else {
+//                 number += "-";
+//             }
+//         }
+//         number += "\n";
+//     }
+//     return number;
+// }
+
+////14.
+// function draw(n){
+//     number="";
+//     for (let i = n; i > 0; i--){
+//         for (let j = 1; j <= n; j++){
+//             if (j <= i){
+//                 number += "*";
+//             } else {
+//                 number += "-";
+//             }
+//         }
+//         number += "\n";
+//     }
+//     return number;
+// }
+
+////15.
+// const draw = (n) => {
+//     n = Math.floor(n);
+//     let result = ``;
+//     let resultSum = ``;
+
+//     for (let i = 1; i <= n; i++) {
+
+//         for (let k = 0; k < i; k++) {
+//             result += `*`;
+//         }
+
+//         for (let j = n - i; j >= 1; j--) {
+//             result += `_`;
+//         }
+//         resultSum += result + `\n`;
+//         result = ``;
+//     }
+
+////16
+// function draw(n) {
+//         let numOut = 1;
+//         let amountofNum = 1;
+//         let resetNum = 1;
+//         for (let i = 1; i <= n * 2 - 1; i++) {
+//           for (let j = 1; j <= n; j++) {
+//             document.write(numOut);
+//             amountofNum--;
+//             if (amountofNum <= 0) {
+//               numOut = "-";
+//             }
+//           }
+//           document.write("<br>");
+//           if (i < n) {
+//             resetNum++;
+//           } else {
+//             resetNum--;
+//           }
+//           amountofNum = resetNum;
+//           numOut = resetNum;
+//         }
+//       }
+//       let numIn = +prompt();
+//       draw(numIn);
+
+
+////17
+// const draw = (n) => {
+//     n = Math.floor(n);
+//     let result = ``;
+//     let resultSum = ``;
+
+//     for (let i = 1; i <= n; i++) {
+
+//         for (let k = 0; k < n - i; k++) {
+//             result += `-`;
+//         }
+
+//         for (let j = n; j > n - i; j--) {
+//             result += `*`;
+//         }
+//         resultSum += result + `\n`;
+//         result = ``;
+//     }
+
+//     alert(resultSum);
+// }
+
+////18
+// const draw = (n) => {
+//     n = Math.floor(n);
+//     let result = ``;
+//     let resultSum = ``;
+
+//     for (let i = n; i >= 1; i--) {
+
+//         for (let k = 0; k < n - i; k++) {
+//             result += `_`;
+//         }
+
+//         for (let j = n; j > n - i; j--) {
+//             result += `*`;
+//         }
+//         resultSum += result + `\n`;
+//         result = ``;
+//     }
+
+//     alert(resultSum);
+// }
+
+////19
+// const draw = (n) => {
+//     n = Math.floor(n);
+//     let result = ``;
+//     let resultSum = ``;
+
+//     for (let i = 1; i < n; i++) {
+
+//         for (let k = 0; k < n - i; k++) {
+//             result += `-`;
+//         }
+
+//         for (let j = n; j > n - i; j--) {
+//             result += `*`;
+//         }
+//         resultSum += result + `\n`;
+//         result = ``;
+//     }
+
+//     for (let i = n; i >= 1; i--) {
+
+//         for (let k = 0; k < n - i; k++) {
+//             result += `_`;
+//         }
+
+//         for (let j = n; j > n - i; j--) {
+//             result += `*`;
+//         }
+//         resultSum += result + `\n`;
+//         result = ``;
+//     }
+
+//     alert(resultSum);
+// }
+
+////20
+// const draw = (n) => {
+//     n = Math.floor(n);
+//     let result = ``;
+//     let resultSum = ``;
+//     let count = 1;
+
+//     for (let i = 1; i < n; i++) {
+
+//         for (let k = 0; k < n - i; k++) {
+//             result += `-`;
+//         }
+
+//         for (let j = n; j > n - i; j--) {
+//             result += `${count}`;
+//             count++;
+//         }
+//         resultSum += result + `\n`;
+//         result = ``;
+//     }
+
+//     for (let i = n; i >= 1; i--) {
+
+//         for (let k = 0; k < n - i; k++) {
+//             result += `_`;
+//         }
+
+//         for (let j = n; j > n - i; j--) {
+//             result += `${count}`;
+//             count++;
+//         }
+//         resultSum += result + `\n`;
+//         result = ``;
+//     }
+
+//     alert(resultSum);
+// }
+
+////21
+// const draw = (n) => {
+//     n = Math.floor(n);
+//     let result = ``;
+//     let resultSum = ``;
+//     let count = 0;
+
+//     for (let i = 1; i <= n; i++) {
+//         for (let j = 1; j <= n - 1; j++) {
+//             result += `__`;
+//         }
+
+//         while (count != 2 * i - 1) {
+//             result += `*_`;
+//             count++;
+//         }
+
+//         resultSum += result + `\n`;
+//     }
+
+//     alert(resultSum);
+// }
+
+////22
+// function draw(n) {
+//         let star_;
+//         let amountOfStar = n * 2 - 1;
+//         let positionofStar = 1;
+//         let resetstar = 1;
+//         for (let i = 1; i <= n; i++) {
+//           for (let j = 1; j <= n * 2 - 1; j++) {
+//             star_ = "-";
+//             if (j >= positionofStar && j < positionofStar + amountOfStar) {
+//               star_ = "*";
+//             }
+//             document.write(star_);
+//           }
+//           document.write("<br>");
+//           if (i < n) {
+//             resetstar++;
+//           } else {
+//             resetstar--;
+//           }
+//           positionofStar++;
+//           amountOfStar -= 2;
+//         }
+//       }
+
+//       let numIn = +prompt();
+//       draw(numIn);
+////23
+// function draw(n) {
+//         let star_;
+//         let amountOfStar = 1;
+//         let positionofStar = n;
+//         let resetstar = 1;
+//         let resetPosition = n;
+//         for (let i = 1; i <= n * 2 - 1; i++) {
+//           for (let j = 1; j <= n * 2 - 1; j++) {
+//             star_ = "-";
+//             if (j >= positionofStar && j < positionofStar + amountOfStar) {
+//               star_ = "*";
+//             }
+//             document.write(star_);
+//           }
+//           document.write("<br>");
+//           if (i < n) {
+//             resetstar += 2;
+//             resetPosition--;
+//           } else {
+//             resetstar -= 2;
+//             resetPosition++;
+//           }
+//           positionofStar = resetPosition;
+//           amountOfStar = resetstar;
+//         }
+//       }
+
+//       let numIn = +prompt();
+//       draw(numIn);
+
+////24
+// function draw(n) {
+//         let out;
+//         let numOut = 1;
+//         let amountOfStar = 1;
+//         let positionofStar = n;
+//         let resetstar = 1;
+//         let resetPosition = n;
+//         for (let i = 1; i <= n * 2 - 1; i++) {
+//           for (let j = 1; j <= n * 2 - 1; j++) {
+//             out = "-";
+//             if (j >= positionofStar && j < positionofStar + amountOfStar) {
+//               out = numOut;
+//               numOut++;
+//             }
+//             document.write(out);
+//           }
+//           document.write("<br>");
+//           if (i < n) {
+//             resetstar += 2;
+//             resetPosition--;
+//           } else {
+//             resetstar -= 2;
+//             resetPosition++;
+//           }
+//           positionofStar = resetPosition;
+//           amountOfStar = resetstar;
+//         }
+//       }
+
+//       let numIn = +prompt();
+//       draw(numIn);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
